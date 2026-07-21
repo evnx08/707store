@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #fff;
+}
+
+/* Tempat semua foto */
+#photos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Foto */
+.photo{
+    position:absolute;
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border:8px solid #fff;
+    border-radius:10px;
+    box-shadow:0 10px 20px rgba(0,0,0,.18);
+    transition:.3s;
+    z-index:20;
+}
+
+.photo:hover{
+    transform:scale(1.08) rotate(0deg)!important;
+    z-index:999;
+}
+
+/* ============================= */
+/* VIDEO */
+/* ============================= */
+
+.video-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:10;
+}
+
+.video-box video{
+    width:430px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+/* ============================= */
+/* UCAPAN */
+/* ============================= */
+
+.message{
+
+    width: 80%;
+
+    margin: 80px auto;
+
+    text-align: center;
+
+}
+
+.message h1{
+
+    font-size: 42px;
+
+    margin-bottom: 30px;
+
+    color: #333;
+}
+
+.message p{
+
+    font-size: 20px;
+
+    color: #555;
+
+    line-height: 1.9;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px){
+
+    .hero{
+        height: 100vh;
+    }
+
+    .video-box video{
+
+    width:380px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+    .photo{
+
+        width: 100px !important;
+        height: 100px !important;
+
+        border-width: 5px;
+    }
+
+    .message{
+
+        width: 90%;
+        padding-bottom: 40px;
+
+    }
+
+    .message h1{
+
+        font-size: 32px;
+
+    }
+
+    .message p{
+
+        font-size: 17px;
+
+        line-height: 1.8;
+    }
+
+}
