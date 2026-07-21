@@ -23,7 +23,7 @@ daftarFoto.forEach((foto) => {
 
     const img = document.createElement("img");
 
-    img.src = "image/" + foto;
+    img.src = foto;
     img.className = "photo";
 
     img.style.width = ukuran + "px";
